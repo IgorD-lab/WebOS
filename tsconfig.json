@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "target": "ESNext", // Or at least "ES2020"
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler", // Essential for Vite
+    "skipLibCheck": true, // Crucial: Stops TS from complaining about errors inside node_modules
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
