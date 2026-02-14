@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
+    "target": "ESNext", // Or at least "ES2020"
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler", // Essential for Vite
+    "skipLibCheck": true, // Crucial: Stops TS from complaining about errors inside node_modules
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
       "#*": ["./src/*"]
     },
     "jsx": "react-jsx",
-    "types": ["vitest/globals"] // include vitest "dictionary" globally for tests
+    "types": ["vitest/globals"], // include vitest "dictionary" globally for tests
+    "noEmit": true,
+    "outDir": "dist"
   },
   "include": ["src"]
 }
