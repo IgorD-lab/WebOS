@@ -1,0 +1,15 @@
+name: React CI
+on: [push, pull_request]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci # Clean install of dependencies
+      - run: npm run lint # Check for style errors
+      - run: npm run test # Run Vitest tests
+      - run: npm run build # Make sure it actually compiles
