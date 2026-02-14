@@ -15,7 +15,8 @@ const FONT_WEIGHTS: Record<FontWeightCategory, WeightRange> = {
   title: { min: 400, max: 900, default: 400 },
 };
 
-// Render text helper function
+// Break up string into individual characters for animation, wraps each character into <span> tag
+// (text=content, className=styling, baseWeight=custom boldness[min, max, default])
 const renderText = (text: string, className: string, baseWeight = 400) => {
   return [...text].map((char, i) => (
     <span
@@ -30,7 +31,7 @@ const renderText = (text: string, className: string, baseWeight = 400) => {
   ));
 };
 
-// text hover helper function
+// identifies letters - needs animations attached incomplete func.
 const setupTextHover = (
   container: HTMLElement | null,
   type: FontWeightCategory,
@@ -42,6 +43,7 @@ const setupTextHover = (
 };
 
 const Welcome = () => {
+  // pointers touching each letter for hover effect later
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
 
