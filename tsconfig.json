@@ -11,7 +11,9 @@
       "#*": ["./src/*"]
     },
     "jsx": "react-jsx",
-    "types": ["vitest/globals"] // include vitest "dictionary" globally for tests
+    "types": ["vitest/globals"], // include vitest "dictionary" globally for tests
+    "noEmit": true,
+    "outDir": "dist"
   },
   "include": ["src"]
 }
