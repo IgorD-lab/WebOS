@@ -62,7 +62,7 @@ const Dock = () => {
     };
   }, []);
 
-  const toggleApp = (app: AppToggleProps) => {
+  const toggleApp = (_app: AppToggleProps) => {
     // TODO Implement Open Window Logic
   };
 
