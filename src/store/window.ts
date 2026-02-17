@@ -16,7 +16,7 @@ export type WindowKey = keyof typeof WINDOW_CONFIG;
 interface WindowStore {
   windows: Record<WindowKey, WindowState>;
   nextZIndex: number;
-  openWindow: (windowKey: WindowKey, data?: any) => void;
+  openWindow: (windowKey: WindowKey, data?: unknown) => void;
   closeWindow: (windowKey: WindowKey) => void;
   focusWindow: (windowKey: WindowKey) => void;
 }
