@@ -6,7 +6,7 @@ import { INITIAL_Z_INDEX, WINDOW_CONFIG } from '#constants';
 interface WindowState {
   isOpen: boolean;
   zIndex: number;
-  data: any;
+  data: unknown;
 }
 
 // Extract valid app names (finder, safari, etc.) from the config constant
