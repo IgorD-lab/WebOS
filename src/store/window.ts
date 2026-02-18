@@ -9,7 +9,7 @@ import { INITIAL_Z_INDEX, WINDOW_CONFIG } from '#constants';
 interface WindowState {
   isOpen: boolean;
   zIndex: number;
-  data: any; // Changed from null to any/unknown so it can actually hold data
+  data: unknown; // Changed from null to any/unknown so it can actually hold data
 }
 
 // WindowKey creates a list of allowed names (e.g., 'terminal' | 'browser')
@@ -19,7 +19,7 @@ export type WindowKey = keyof typeof WINDOW_CONFIG;
 interface WindowStore {
   windows: Record<WindowKey, WindowState>; // A map of all windows
   nextZIndex: number; // The "depth" for the next focused window
-  openWindow: (windowKey: WindowKey, data?: any) => void;
+  openWindow: (windowKey: WindowKey, data?: unknown) => void;
   closeWindow: (windowKey: WindowKey) => void;
   focusWindow: (windowKey: WindowKey) => void;
 }
