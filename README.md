@@ -4,4 +4,4 @@ to install project: npm install
 to run project: npm run dev  
 to format code before PR: npm run format
 
-website simulating desktop OS functionalty - work in progress
+website simulating desktop MacOS functionalty - work in progress
