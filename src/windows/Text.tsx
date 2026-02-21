@@ -3,7 +3,7 @@ import WindowWrapper from '#hoc/WindowWrapper';
 import useWindowStore from '#store/window';
 import { FinderItem } from '#types';
 
-const Text = () => {
+const TextWindowContent = () => {
   const { windows } = useWindowStore();
 
   // Directly access the data stored for this window
@@ -43,5 +43,5 @@ const Text = () => {
   );
 };
 
-const TextWindow = WindowWrapper(Text, 'txtfile');
+const TextWindow = WindowWrapper(TextWindowContent, 'txtfile');
 export default TextWindow;
