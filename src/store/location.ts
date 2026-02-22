@@ -16,7 +16,8 @@ const useLocationStore = create<LocationState>()(
     activeLocation: DEFAULT_LOCATION,
     setActiveLocation: (location) =>
       set((state) => {
-        if (location) state.activeLocation = location as FinderItem;
+        if (location === undefined) return;
+        state.activeLocation = location as FinderItem;
       }),
     resetActiveLocation: () =>
       set((state) => {
