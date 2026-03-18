@@ -12,6 +12,7 @@ export const Terminal = () => {
       </div>
 
       <div className="techstack">
+        {/* // TODO change technical details */}
         <p>
           <span className="font-bold">@IgorD % </span>
           show tech stack
