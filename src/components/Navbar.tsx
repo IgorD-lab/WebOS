@@ -1,8 +1,10 @@
 import dayjs from 'dayjs';
 
 import { NAV_ICONS, NAV_LINKS } from '#constants';
+import useWindowStore from '#store/window';
 
 const Navbar = () => {
+  const { openWindow } = useWindowStore();
   return (
     <nav>
       <div>
@@ -11,8 +13,8 @@ const Navbar = () => {
 
         <ul>
           {/* Map data into basic nav links turning them into jsx. Move data outside of component into a constant at the top of the file if it becomes unredable. */}
-          {NAV_LINKS.map(({ id, name }) => (
-            <li key={id}>
+          {NAV_LINKS.map(({ id, name, type }) => (
+            <li key={id} onClick={() => openWindow(type)}>
               <p>{name}</p>
             </li>
           ))}
