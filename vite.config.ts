@@ -9,6 +9,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true, // This lets you use 'describe' and 'it' without importing them
+    setupFiles: './src/test/setup.ts',
   },
   resolve: {
     alias: {
