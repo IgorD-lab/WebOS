@@ -6,7 +6,7 @@ describe('Navbar Component', () => {
     render(<Navbar />);
 
     // This checks if the text exists in the document
-    const titleElement = screen.getByText(/Y2K's Portfolio/i);
+    const titleElement = screen.getByText(/IgorD's Portfolio/i);
     expect(titleElement).toBeDefined();
   });
 
