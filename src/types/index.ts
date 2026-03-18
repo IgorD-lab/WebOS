@@ -1,4 +1,3 @@
-// TODO: move all types here
 export type WindowID =
   | 'finder'
   | 'contact'
@@ -14,10 +13,24 @@ export interface FinderItem {
   name: string;
   icon: string;
   kind: 'folder' | 'file';
+  // Common properties
   type?: string;
   fileType?: string;
   position?: string;
-  imageUrl?: string;
+  windowPosition?: string;
+  // File specific properties
   href?: string;
+  imageUrl?: string;
+  // Text file specific (Flat, not nested)
+  image?: string;
+  subtitle?: string;
+  description?: string[];
+  // Folders
   children?: FinderItem[];
+}
+
+export interface WindowState {
+  isOpen: boolean;
+  zIndex: number;
+  data: FinderItem | null;
 }
