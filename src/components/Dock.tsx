@@ -62,6 +62,7 @@ const Dock = () => {
     };
   }, []);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const toggleApp = (_app: AppToggleProps) => {
     // TODO Implement Open Window Logic
   };
