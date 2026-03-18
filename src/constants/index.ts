@@ -16,7 +16,7 @@ const NAV_LINKS = [
     name: 'Resume',
     type: 'resume',
   },
-];
+] as const;
 
 const NAV_ICONS = [
   {
