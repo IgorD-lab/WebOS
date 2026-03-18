@@ -5,7 +5,7 @@ import React, {
   useLayoutEffect,
 } from 'react';
 // We use 'import type' to ensure these are erased at runtime
-import type { WindowKey } from '#store/window';
+import type { WindowID } from '#types';
 import useWindowStore from '#store/window';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -19,7 +19,7 @@ import { Draggable } from 'gsap/Draggable';
  */
 const WindowWrapper = <P extends object>(
   Component: ComponentType<P>,
-  windowKey: WindowKey,
+  windowKey: WindowID,
 ): ((props: P) => ReactElement | null) => {
   // This is the actual component that gets rendered
   const Wrapped = (props: P) => {

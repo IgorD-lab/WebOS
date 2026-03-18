@@ -4,7 +4,8 @@ import { gsap } from 'gsap';
 
 import { DOCK_APPS } from '#constants';
 import { useGSAP } from '@gsap/react';
-import useWindowStore, { WindowKey } from '#store/window';
+import { WindowID } from '#types';
+import useWindowStore from '#store/window';
 
 interface AppToggleProps {
   id: string;
@@ -67,7 +68,7 @@ const Dock = () => {
   const toggleApp = (app: AppToggleProps) => {
     if (!app.canOpen) return;
 
-    const windowId = app.id as WindowKey;
+    const windowId = app.id as WindowID;
     const window = windows[windowId];
 
     if (!window) {
