@@ -48,7 +48,7 @@ const setupTextHover = (
   container: HTMLElement | null,
   type: FontWeightCategory,
 ) => {
-  if (!container) return; // Safety check: if the element doesn't exist, do nothing.
+  if (!container) return () => {}; // Safety check: if the element doesn't exist, do nothing.
 
   const letters = container.querySelectorAll('span'); // Find all letters we created earlier
   const { min, max, default: base } = FONT_WEIGHTS[type]; // Get the weight rules for this text
