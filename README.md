@@ -2,4 +2,4 @@
 
 to install project: npm install  
 to run project: npm run dev  
-to format project: npm run format
+to format code before PR: npm run format
