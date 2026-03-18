@@ -1,5 +1,6 @@
 // Receptionist folder allows barrel imports: import {x, y} from #constants
 
+// TODO
 const NAV_LINKS = [
   {
     id: 1,
@@ -18,6 +19,7 @@ const NAV_LINKS = [
   },
 ] as const;
 
+// TODO
 const NAV_ICONS = [
   {
     id: 1,
@@ -37,70 +39,73 @@ const NAV_ICONS = [
   },
 ];
 
+// TODO
 const DOCK_APPS = [
   {
     id: 'finder',
-    name: 'Portfolio', // was "Finder"
+    name: 'Portfolio',
     icon: 'finder.png',
     canOpen: true,
   },
   {
     id: 'safari',
-    name: 'Articles', // was "Safari"
+    name: 'Articles',
     icon: 'safari.png',
     canOpen: true,
   },
   {
     id: 'photos',
-    name: 'Gallery', // was "Photos"
+    name: 'Gallery',
     icon: 'photos.png',
     canOpen: true,
   },
   {
     id: 'contact',
-    name: 'Contact', // or "Get in touch"
+    name: 'Contact',
     icon: 'contact.png',
     canOpen: true,
   },
   {
     id: 'terminal',
-    name: 'Skills', // was "Terminal"
+    name: 'Skills',
     icon: 'terminal.png',
     canOpen: true,
   },
   {
     id: 'trash',
-    name: 'Archive', // was "Trash"
+    name: 'Archive',
     icon: 'trash.png',
     canOpen: false,
   },
 ];
 
+// TODO
 const BLOG_POSTS = [
   {
     id: 1,
     date: 'Sep 2, 2025',
     title:
-      'TypeScript Explained: What It Is, Why It Matters, and How to Master It',
+      'Filler Blog Post Title: What It Is, Why It Matters, and How to Master It',
     image: '/images/blog1.png',
-    link: 'https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it',
+    link: 'https://google.com',
   },
   {
     id: 2,
     date: 'Aug 28, 2025',
-    title: 'The Ultimate Guide to Mastering Three.js for 3D Development',
+    title: 'The Ultimate Guide to Mastering Filler Content for Web Development',
     image: '/images/blog2.png',
-    link: 'https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development',
+    link: 'https://google.com',
   },
   {
     id: 3,
     date: 'Aug 15, 2025',
-    title: 'The Ultimate Guide to Mastering GSAP Animations',
+    title: 'The Ultimate Guide to Mastering Generic Animations',
     image: '/images/blog3.png',
-    link: 'https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations',
+    link: 'https://google.com',
   },
 ];
 
+// TODO
 const TECH_STACK = [
   {
     category: 'Frontend',
@@ -116,7 +121,7 @@ const TECH_STACK = [
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Express', 'NestJS', 'Hono'],
+    items: ['Node.js', 'Express', 'NestJS', 'Django'],
   },
   {
     category: 'Database',
@@ -128,37 +133,39 @@ const TECH_STACK = [
   },
 ];
 
+// TODO
 const SOCIALS = [
   {
     id: 1,
     text: 'Github',
     icon: '/icons/github.svg',
     bg: '#f4656b',
-    link: 'https://github.com/JavaScript-Mastery-Pro',
+    link: 'https://google.com',
   },
   {
     id: 2,
     text: 'Platform',
     icon: '/icons/atom.svg',
     bg: '#4bcb63',
-    link: 'https://jsmastery.com/',
+    link: 'https://google.com',
   },
   {
     id: 3,
     text: 'Twitter/X',
     icon: '/icons/twitter.svg',
     bg: '#ff866b',
-    link: 'https://x.com/jsmasterypro',
+    link: 'https://google.com',
   },
   {
     id: 4,
     text: 'LinkedIn',
     icon: '/icons/linkedin.svg',
     bg: '#05b6f6',
-    link: 'https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all',
+    link: 'https://google.com',
   },
 ];
 
+// TODO
 const PHOTOS_LINKS = [
   {
     id: 1,
@@ -187,6 +194,7 @@ const PHOTOS_LINKS = [
   },
 ];
 
+// TODO
 const GALLERY = [
   {
     id: 1,
@@ -217,6 +225,7 @@ export {
   GALLERY,
 };
 
+// TODO
 const WORK_LOCATION = {
   id: 1,
   type: 'work',
@@ -224,41 +233,42 @@ const WORK_LOCATION = {
   icon: '/icons/work.svg',
   kind: 'folder',
   children: [
+    // TODO
     // ▶ Project 1
     {
       id: 5,
-      name: 'Nike Ecommerce Website Application',
+      name: 'Project One Main Title Application',
       icon: '/images/folder.png',
       kind: 'folder',
-      position: 'top-10 left-5', // icon position inside Finder
-      windowPosition: 'top-[5vh] left-5', // optional: Finder window position
+      position: 'top-10 left-5',
+      windowPosition: 'top-[5vh] left-5',
       children: [
         {
           id: 1,
-          name: 'Nike Project.txt',
+          name: 'Project One Details.txt',
           icon: '/images/txt.png',
           kind: 'file',
           fileType: 'txt',
           position: 'top-5 left-10',
           description: [
-            'The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.',
-            'Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.',
-            'Think of it like walking into a flagship Nike store—but right from your phone or laptop.',
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            'This project is a sleek and modern platform designed for showcasing specific core features.',
+            'Instead of a simple generic app, it delivers an immersive experience with bold visuals, interactive displays, and smooth navigation.',
+            'Think of it like walking into a flagship store—but right from your phone or laptop.',
+            "It's built with modern frameworks, ensuring fast performance, responsive design, and a clean, premium look.",
           ],
         },
         {
           id: 2,
-          name: 'nike.com',
+          name: 'project-one.com',
           icon: '/images/safari.png',
           kind: 'file',
           fileType: 'url',
-          href: 'https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU',
+          href: 'https://google.com',
           position: 'top-10 right-20',
         },
         {
           id: 4,
-          name: 'nike.png',
+          name: 'project-one-preview.png',
           icon: '/images/image.png',
           kind: 'file',
           fileType: 'img',
@@ -277,10 +287,11 @@ const WORK_LOCATION = {
       ],
     },
 
+    // TODO
     // ▶ Project 2
     {
       id: 6,
-      name: 'AI Resume Analyzer',
+      name: 'Project Two Main Title Application',
       icon: '/images/folder.png',
       kind: 'folder',
       position: 'top-52 right-80',
@@ -288,30 +299,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: 'AI Resume Analyzer Project.txt',
+          name: 'Project Two Details.txt',
           icon: '/images/txt.png',
           kind: 'file',
           fileType: 'txt',
           position: 'top-5 right-10',
           description: [
-            'AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.',
-            'Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.',
-            'Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.',
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            'Work in progress.',
+            'Work in progress.',
+            'Work in progress.',
+            'Work in progress.',
           ],
         },
         {
           id: 2,
-          name: 'ai-resume-analyzer.com',
+          name: 'project-two.com',
           icon: '/images/safari.png',
           kind: 'file',
           fileType: 'url',
-          href: 'https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl',
+          href: 'https://google.com',
           position: 'top-20 left-20',
         },
         {
           id: 4,
-          name: 'ai-resume-analyzer.png',
+          name: 'project-two-preview.png',
           icon: '/images/image.png',
           kind: 'file',
           fileType: 'img',
@@ -330,10 +341,11 @@ const WORK_LOCATION = {
       ],
     },
 
+    // TODO
     // ▶ Project 3
     {
       id: 7,
-      name: 'Food Delivery App',
+      name: 'Project Three Main Title Application',
       icon: '/images/folder.png',
       kind: 'folder',
       position: 'top-10 left-80',
@@ -341,30 +353,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: 'Food Delivery App Project.txt',
+          name: 'Project Three Details.txt',
           icon: '/images/txt.png',
           kind: 'file',
           fileType: 'txt',
           position: 'top-5 left-10',
           description: [
-            'Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.',
-            'Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.',
-            'Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.',
-            'It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.',
+            'Our third application is a fast and convenient way to manage your daily tasks efficiently.',
+            'Instead of using outdated methods, you can browse options, customize workflows, and track progress in real time.',
+            'Think of it like having a personal assistant in your pocket—ready to help anytime, anywhere.',
+            'It’s built with modern cross-platform tools, so it works smoothly on all devices with a clean, modern design.',
           ],
         },
         {
           id: 2,
-          name: 'food-delivery-app.com',
+          name: 'project-three.com',
           icon: '/images/safari.png',
           kind: 'file',
           fileType: 'url',
-          href: 'https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-',
+          href: 'https://google.com',
           position: 'top-10 right-20',
         },
         {
           id: 4,
-          name: 'food-delivery-app.png',
+          name: 'project-three-preview.png',
           icon: '/images/image.png',
           kind: 'file',
           fileType: 'img',
@@ -385,6 +397,7 @@ const WORK_LOCATION = {
   ],
 };
 
+// TODO
 const ABOUT_LOCATION = {
   id: 2,
   type: 'about',
@@ -399,7 +412,7 @@ const ABOUT_LOCATION = {
       kind: 'file',
       fileType: 'img',
       position: 'top-10 left-5',
-      imageUrl: '/images/y2k.jpg',
+      imageUrl: '/images/igord.jpg',
     },
     {
       id: 2,
@@ -408,7 +421,7 @@ const ABOUT_LOCATION = {
       kind: 'file',
       fileType: 'img',
       position: 'top-28 right-72',
-      imageUrl: '/images/y2k-2.jpg',
+      imageUrl: '/images/igord-2.jpg',
     },
     {
       id: 3,
@@ -417,7 +430,7 @@ const ABOUT_LOCATION = {
       kind: 'file',
       fileType: 'img',
       position: 'top-52 left-80',
-      imageUrl: '/images/y2k-3.jpeg',
+      imageUrl: '/images/igord-3.jpeg',
     },
     {
       id: 4,
@@ -426,18 +439,19 @@ const ABOUT_LOCATION = {
       kind: 'file',
       fileType: 'txt',
       position: 'top-60 left-5',
-      subtitle: 'Meet the Developer Behind the Code',
-      image: '/images/y2k.jpg',
+      subtitle: 'Software Engineer & Creative Developer',
+      image: '/images/igord.jpg',
       description: [
-        'Hey! I’m IgorD 👋, a web developer who enjoys building sleek, interactive websites that actually work well.',
-        'I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.',
-        'I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.',
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        'Hello! I am a passionate developer dedicated to creating high-quality digital experiences that are both functional and visually appealing.',
+        'I focus on modern web technologies to build scalable applications, ensuring that every project I touch is optimized for performance and user engagement.',
+        'My approach involves writing maintainable, efficient code while maintaining a strong eye for detail and design consistency.',
+        'When I am not coding, I enjoy exploring new technologies, contributing to open-source projects, and constantly learning to stay ahead in the ever-evolving tech landscape.',
       ],
     },
   ],
 };
 
+// TODO
 const RESUME_LOCATION = {
   id: 3,
   type: 'resume',
@@ -451,12 +465,12 @@ const RESUME_LOCATION = {
       icon: '/images/pdf.png',
       kind: 'file',
       fileType: 'pdf',
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
+      // href: "https://google.com",
     },
   ],
 };
 
+// TODO
 const TRASH_LOCATION = {
   id: 4,
   type: 'trash',

@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav>
       <div>
         <img src="images/logo.svg" alt="logo" />
-        <p className="font-bold">Y2K's Portfolio</p>
+        <p className="font-bold">IgorD's Portfolio</p>
 
         <ul>
           {/* Map data into basic nav links turning them into jsx. Move data outside of component into a constant at the top of the file if it becomes unredable. */}
