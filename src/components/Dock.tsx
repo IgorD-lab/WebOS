@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 
 import { DOCK_APPS } from '#constants';
 import { useGSAP } from '@gsap/react';
+import useWindowStore, { WindowKey } from '#store/window';
 
 interface AppToggleProps {
   id: string;
@@ -11,6 +12,7 @@ interface AppToggleProps {
 }
 
 const Dock = () => {
+  const { openWindow, closeWindow, windows } = useWindowStore();
   const dockRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
@@ -62,9 +64,24 @@ const Dock = () => {
     };
   }, []);
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const toggleApp = (_app: AppToggleProps) => {
-    // TODO Implement Open Window Logic
+  const toggleApp = (app: AppToggleProps) => {
+    if (!app.canOpen) return;
+
+    const windowId = app.id as WindowKey;
+    const window = windows[windowId];
+
+    if (!window) {
+      console.error(`Window not found for app: ${app.id}`);
+      return;
+    }
+
+    if (window.isOpen) {
+      closeWindow(windowId);
+    } else {
+      openWindow(windowId);
+    }
+
+    console.log(windows);
   };
 
   return (
